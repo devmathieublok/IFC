@@ -427,6 +427,7 @@ footer > a:first-child {
 	.MobileH1NavTemplate {
 		display: flex;
 		margin: 0px 0px 30px 20px;
+		width: fit-content;
 	}
 }
 
@@ -749,9 +750,28 @@ footer > a:first-child {
 @media screen and (max-width: 822px) {
 	.SectionQuote {
 		width: initial;
+		padding: 20px;
 	}
 }
 /*Tablet 822px*/
+
+/*Mobile*/
+@media screen and (max-width: 414px) {
+	.SectionQuote {
+		width: initial;
+		padding: 20px;
+	}
+}
+/*Mobile*/
+
+/*Mobile*/
+@media screen and (max-width: 414px) {
+	.SectionQuote {
+		width: initial;
+		padding: 20px;
+	}
+}
+/*Mobile*/
 
 .QuoteContent {
 	display: flex;
@@ -792,21 +812,6 @@ footer > a:first-child {
 }
 
 
-@media screen and (max-width: 620px) {
-	.ProfilInfos > img{
-		position: absolute;
-		right: 30px;
-	}
-}
-
-/*Mobile 320px*/
-@media screen and (max-width: 320px) {
-	.ProfilInfos > img{
-		width: 50px;
-	}
-}
-/*Mobile 320*/
-
 /*Tablet 822px*/
 @media screen and (max-width: 822px) {
 	.QuoteProfilImg  {
@@ -815,6 +820,27 @@ footer > a:first-child {
 	}
 }
 /*Tablet 822px*/
+
+@media screen and (max-width: 620px) {
+	.ProfilInfos > img{
+		position: absolute;
+		right: 70px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.ProfilInfos > img{
+		width: 90px;
+		right: 20px;
+	}
+}
+
+@media screen and (max-width: 325px) {
+	.ProfilInfos > img{
+		width: 60px;
+		right: 20px;
+	}
+}
 
 .QuoteImgElementDesktop {
 	width: 250px;
@@ -937,6 +963,12 @@ footer > a:first-child {
 }
 
 @media screen and (max-width: 822px) {
+	.Article {
+		margin-right: 0px;
+	}	
+}
+
+@media screen and (max-width: 822px) {
 	.ArticleImg {
 		width: 100%;
 		height: auto;
@@ -948,7 +980,7 @@ footer > a:first-child {
 	line-height: 28px;
 	margin-top: 15px;
 	margin-bottom: 0px;
-	width: 400px;
+	max-width: 400px;
 }
 
 .ArticleDescription {
