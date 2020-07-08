@@ -471,6 +471,7 @@ footer > a:first-child {
 	height: 30px;
 	background-color: #E7E7E7;
 	border: solid 2px #FFFFFF;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 822px) {
@@ -591,7 +592,7 @@ footer > a:first-child {
 	position: absolute;
 	width: 110vw;
 	opacity: 1;
-	bottom: 17%;
+	bottom: 10%;
 }
 
 @media screen and (max-width: 800px) {
