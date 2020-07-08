@@ -349,7 +349,7 @@ footer > a:first-child {
 	left: 0;
 	right: 0;
 	width: 100%;
-	z-index: 100;
+	z-index: 150;
 	margin-bottom: 100px;
 	background-color: #FFFFFF;
 }
@@ -736,9 +736,9 @@ footer > a:first-child {
 	background-color: #E2ECEA;
     display: flex;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin: 30px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 50px auto;
     width: 1340px;
     overflow: hidden;
     position: relative;
@@ -791,7 +791,7 @@ footer > a:first-child {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
 	.ProfilInfos > img{
 		position: absolute;
 		right: 30px;
@@ -882,7 +882,7 @@ footer > a:first-child {
 
 .QuoteDescription {
 	text-align: right;
-	width: 630px;
+	width: 550px;
 	font-family: "Avenir", sans-serif;
 	margin-top: 10px;
 	font-size: 18px;
@@ -916,6 +916,67 @@ footer > a:first-child {
 }
 /*Mobile 414px*/
 
-.QuoteDescElementWrapper 
-/*Tablet 822px*/
+.SectionArticle {
+	font-family: "Avenir", sans-serif;
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-top: 50px;
+}
+
+@media screen and (max-width: 822px) {
+	.SectionArticle {
+		flex-wrap: wrap;
+	}
+}
+
+.Article {
+	margin-right: 50px;
+	width: 100%;
+}
+
+@media screen and (max-width: 822px) {
+	.ArticleImg {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.ArticleTitle {
+	font-size: 23px;
+	line-height: 28px;
+	margin-top: 15px;
+	margin-bottom: 0px;
+	width: 400px;
+}
+
+.ArticleDescription {
+	margin: 10px 0px 0px 0px; 
+	max-width: 600px;
+	color: grey;
+	line-height: 22px;
+	font-size: 17px;
+}
+
+.ArticleVilleGif {
+	width: 734px;
+	height: 375px;
+	margin-top: -60px;
+}
+
+@media screen and (max-width: 822px) {
+	.ArticleVilleGif {
+		width: 500px;
+		height: auto;
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.ArticleVilleGif {
+		width: 100%;
+		height: auto;
+		margin-top: 50px;
+	}
+}
 /*Template*/
