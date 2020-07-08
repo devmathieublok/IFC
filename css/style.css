@@ -316,7 +316,13 @@ footer > a:first-child {
 .WrapperBody {
 	max-width: 1340px;
 	margin: 0 auto;
-	padding: 0px 20px;
+	padding: 0px 30px;
+}
+
+@media screen and (max-width: 414px) {
+	.WrapperBody {
+		padding: 0px 20px;
+	}
 }
 
 .ShapeSeparator {
@@ -437,10 +443,10 @@ footer > a:first-child {
 		font-family: "Gobold", sans-serif;
 		content: 'Menu';
 		position: absolute;
-		font-size: 15px;
-		color: #ac026e;
-		left: -45px;
-		top: 10px;
+		font-size: 13px;
+		color: grey;
+		left: -40px;
+		top: 12px;
 	}
 }
 
@@ -584,9 +590,9 @@ footer > a:first-child {
 
 .VilleBurgerMenu {
 	position: absolute;
-	width: 80vw;
+	width: 110vw;
 	opacity: 1;
-	bottom: 30%;
+	bottom: 22%;
 }
 
 @media screen and (max-width: 800px) {
@@ -706,7 +712,6 @@ footer > a:first-child {
 @media screen and (max-width: 822px) {
 	.IntroImg {
 		width: 250px;
-		transform: rotate(0deg) !important;
 		margin-bottom: 30px;
 	}
 }
@@ -733,7 +738,7 @@ footer > a:first-child {
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin: 50px auto;
+    margin: 30px auto;
     width: 1340px;
     overflow: hidden;
     position: relative;
@@ -805,7 +810,7 @@ footer > a:first-child {
 @media screen and (max-width: 822px) {
 	.QuoteProfilImg  {
 		width: 250px;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 }
 /*Tablet 822px*/
@@ -820,9 +825,10 @@ footer > a:first-child {
 	.QuoteImgElementDesktop  {
 		position: absolute;
     	width: 150px;
-    	left: 288px;
+    	left: 218px;
     	top: 80px;
     	transform: rotate(14deg) !important;
+    	z-index: 100;
 	}
 }
 
@@ -869,7 +875,7 @@ footer > a:first-child {
 	text-align: right;
 	width: 630px;
 	font-family: "Avenir", sans-serif;
-	margin-top: 20px;
+	margin-top: 10px;
 	font-size: 18px;
 }
 
