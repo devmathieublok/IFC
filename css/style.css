@@ -586,7 +586,7 @@ footer > a:first-child {
 	position: absolute;
 	width: 80vw;
 	opacity: 1;
-	bottom: 15%;
+	bottom: 25%;
 }
 
 @media screen and (max-width: 800px) {
