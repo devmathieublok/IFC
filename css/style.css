@@ -580,7 +580,7 @@ footer > a:first-child {
 	position: absolute;
 	width: 80vw;
 	opacity: 1;
-	bottom: -2px;
+	bottom: 5%;
 }
 
 @media screen and (max-width: 800px) {
@@ -828,6 +828,7 @@ footer > a:first-child {
     	right: 60px;
     	top: 100px;
     	left: initial;
+    	z-index: 99;
 	}
 }
 /*Mobile 505*/
