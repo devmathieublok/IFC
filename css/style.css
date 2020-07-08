@@ -323,6 +323,12 @@ footer > a:first-child {
 	width: 100vw;
 }
 
+@media screen and (max-width: 414px) {
+	.ShapeSeparator {
+		display: none;
+	}
+}
+
 .LinkBackHome {
 	text-decoration: none;
 	transition: all ease-out 0.5s;
