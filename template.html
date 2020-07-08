@@ -132,8 +132,16 @@ $(".OpenBurger").on("click", function () {
 $(".CloseBurgerMenu").on("click", function () {
     $(".BurgerMenu").css("display", "none");
 });
-
-
+</script>
+<script>
+$(document).ready(function() {     
+    $('.SquareNavItem').hover(function(){     
+        $('.PageNameActive').addClass('Hide');    
+    },     
+    function(){    
+        $('.PageNameActive').removeClass('Hide');     
+    });
+});  
 </script>
 
 </body>

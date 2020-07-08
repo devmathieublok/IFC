@@ -6,9 +6,8 @@ html, body {
 	overflow-x: hidden;
 }
 
-/* All delay classes will take half the time to start */
-:root {
-  --animate-delay: 0.5s;
+.Hide {
+	display: none !important;
 }
 
 @font-face {
@@ -592,7 +591,7 @@ footer > a:first-child {
 	position: absolute;
 	width: 110vw;
 	opacity: 1;
-	bottom: 22%;
+	bottom: 17%;
 }
 
 @media screen and (max-width: 800px) {
@@ -857,19 +856,28 @@ footer > a:first-child {
 	display: flex;
 	width: 100%;
 	align-items: flex-end;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	font-family: "Gobold", sans-serif;
 	color: #60ADA0;
 }
 
 /*Tablet 822px*/
-@media screen and (max-width: 506px) {
+@media screen and (max-width: 822px) {
 	.ProfilInfos  {
-		flex-direction: column;
-		align-items: flex-start;
+		align-items: flex-end;
+		justify-content: flex-start;
 	}
 }
 /*Tablet 822px*/
+
+/*Mobile*/
+@media screen and (max-width: 506px) {
+	.ProfilInfos  {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}
+/*Mobile*/
 
 .QuoteDescription {
 	text-align: right;
