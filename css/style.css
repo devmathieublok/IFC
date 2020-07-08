@@ -344,7 +344,7 @@ footer > a:first-child {
 	left: 0;
 	right: 0;
 	width: 100%;
-	z-index: 99;
+	z-index: 100;
 	margin-bottom: 100px;
 	background-color: #FFFFFF;
 }
