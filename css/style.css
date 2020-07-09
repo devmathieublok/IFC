@@ -443,7 +443,7 @@ footer > a:first-child {
 /*Tablet*/
 @media screen and (max-width: 635px) {
 	.RelativeContent {
-		top: 180px;
+		top: 150px;
 		position: absolute;
 	}
 }
@@ -1118,25 +1118,41 @@ footer > a:first-child {
 	font-size: 17px;
 }
 
+.ArticleVilleGifWrapper {
+	height: 100%;
+	width: 100%;
+	min-width: 800px;
+	display: block;
+	margin-top: -110px;
+}
+
 .ArticleVilleGif {
 	width: 100%;
-	height: 375px;
-	margin-top: -90px;
+	height: 100%;
 }
 
 @media screen and (max-width: 822px) {
-	.ArticleVilleGif {
-		width: 500px;
-		height: auto;
-		margin-top: 50px;
+	.ArticleVilleGifWrapper {
+		height: 100%;
+		width: 300px;
+		display: block;
+		margin-top: 30px;
+	}
+
+	.ArticleVilleGifWrapper > img {
+		max-width: 400px;
 	}
 }
 
 @media screen and (max-width: 414px) {
-	.ArticleVilleGif {
-		width: 100%;
-		height: auto;
-		margin-top: 50px;
+	.ArticleVilleGifWrapper > img {
+		max-width: 300px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.ArticleVilleGifWrapper > img {
+		max-width: 280px;
 	}
 }
 /*Template*/
