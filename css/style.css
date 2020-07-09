@@ -233,6 +233,15 @@ header {
 	transition: all ease-out 0.2s;
 }
 
+.LinkCard:hover:not(:focus) {
+	color: initial !important;
+}
+
+
+@media screen and (max-width: 500px) {
+
+}
+
 .Card:hover .LinkCard {
 	opacity: 0.3;
 }
