@@ -455,6 +455,12 @@ footer > a:first-child {
 	}
 }
 
+@media screen and (max-width: 320px) {
+	.H1NavTemplate, .MobileH1NavTemplate {
+		font-size: 14px;
+	}
+}
+
 @media screen and (max-width: 635px) {
 	.H1NavTemplate {
 		display: none;
@@ -771,7 +777,6 @@ footer > a:first-child {
 /*Mobile 505px*/
 
 .SectionQuote {
-	background-color: #E2ECEA;
     display: flex;
     align-items: center;
     padding: 30px;
@@ -782,11 +787,27 @@ footer > a:first-child {
     position: relative;
 }
 
+.QuoteBlueBg {
+	background-color: #E2ECEA;
+}
+
+.QuoteOrangeBg {
+	background-color: #F7E6CF;
+}
+
+.SectionQuoteReverse {
+	flex-flow: row-reverse;
+}
+
 /*Tablet 822px*/
 @media screen and (max-width: 822px) {
 	.SectionQuote {
 		width: initial;
 		padding: 20px;
+	}
+
+	.SectionQuoteReverse {
+		flex-flow: wrap-reverse;
 	}
 }
 /*Tablet 822px*/
@@ -816,6 +837,10 @@ footer > a:first-child {
 	margin:0px 50px;
 }
 
+.QuoteContentReverse {
+	align-items: flex-start;
+}
+
 /*Tablet 822px*/
 @media screen and (max-width: 822px) {
 	.QuoteContent {
@@ -824,6 +849,40 @@ footer > a:first-child {
 	}
 }
 /*Tablet 822px*/
+
+.ProfilInfos {
+	display: flex;
+	width: max-content;
+	align-items: flex-end;
+	justify-content: flex-end;
+	font-family: "Gobold", sans-serif;
+}
+
+.ProfilInfosColorOrange {
+	color: #DF9944;
+}
+
+.ProfilInfosColorBlue {
+	color: #5AA89B;
+}
+
+/*Tablet 822px*/
+@media screen and (max-width: 822px) {
+	.ProfilInfos  {
+		align-items: flex-end;
+		justify-content: flex-start;
+	}
+}
+/*Tablet 822px*/
+
+/*Mobile*/
+@media screen and (max-width: 506px) {
+	.ProfilInfos  {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}
+/*Mobile*/
 
 
 .ProfilInfos > h3 {
@@ -883,6 +942,12 @@ footer > a:first-child {
 	margin-bottom: -165px;
 }
 
+.QuoteElementPhone {
+	margin-bottom: -100px;
+	transform: rotate(5deg);
+	width: 200px;
+}
+
 /*Tablet 822px*/
 @media screen and (max-width: 822px) {
 	.QuoteImgElementDesktop  {
@@ -892,6 +957,15 @@ footer > a:first-child {
     	top: 80px;
     	transform: rotate(14deg) !important;
     	z-index: 100;
+	}
+
+	.QuoteElementPhone {
+		position: absolute;
+    	width: 100px;
+    	left: 218px;
+    	top: 80px;
+    	transform: rotate(14deg) !important;
+    	z-index: 100;	
 	}
 }
 
@@ -916,39 +990,16 @@ footer > a:first-child {
 }
 /*Mobile 320*/
 
-.ProfilInfos {
-	display: flex;
-	width: 100%;
-	align-items: flex-end;
-	justify-content: flex-end;
-	font-family: "Gobold", sans-serif;
-	color: #60ADA0;
-}
-
-/*Tablet 822px*/
-@media screen and (max-width: 822px) {
-	.ProfilInfos  {
-		align-items: flex-end;
-		justify-content: flex-start;
-	}
-}
-/*Tablet 822px*/
-
-/*Mobile*/
-@media screen and (max-width: 506px) {
-	.ProfilInfos  {
-		align-items: flex-start;
-		flex-direction: column;
-	}
-}
-/*Mobile*/
-
 .QuoteDescription {
 	text-align: right;
 	width: 550px;
 	font-family: "Avenir", sans-serif;
 	margin-top: 10px;
 	font-size: 18px;
+}
+
+.QuoteDescriptionReverse {
+	text-align: left;
 }
 
 /*Tablet 822px*/
@@ -978,7 +1029,6 @@ footer > a:first-child {
 	}
 }
 /*Mobile 414px*/
-
 .SectionArticle {
 	font-family: "Avenir", sans-serif;
 	display: flex;
