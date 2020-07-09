@@ -37,15 +37,17 @@
 			<div class="Wrapper_H1_Desktop">
 				<h1 class="Home_H1">Covid-19 : Tous mobilisés, tous solidaires</h1>
 			</div>
-			<div class="Card">
-				<a class="LinkCard" href="template.html"></a>
-				<p class="NameCard">Agir sans attendre</p>
+			<div class="CardScale">
+				<div class="CardScaleImg">
+					<a class="LinkCard" href="template.html"></a>
+					<p class="NameCard">Agir sans attendre</p>
+				</div>
 			</div>
-			<div class="Card">
+			<div class="Card CardScale">
 				<a class="LinkCard" href="template.html"></a>
 				<p class="NameCard">Initiatives solidaires</p>
 			</div>
-			<div class="Card">
+			<div class="Card CardScale">
 				<a class="LinkCard" href="template.html"></a>
 				<p class="NameCard">C’est bon pour le moral !</p>
 			</div>
@@ -59,7 +61,7 @@
 <script>
 	AOS.init();
 	AOS.init({
-disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
 startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
 initClassName: 'aos-init', // class applied after initialization
 animatedClassName: 'aos-animate', // class applied on animation

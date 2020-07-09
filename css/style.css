@@ -171,6 +171,37 @@ header {
 	position: relative;
 }
 
+.CardScale {
+	width: 280px;
+	height: 280px;
+	border: solid 10px #FFFFFF;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;	
+}
+
+.CardScaleImg {
+	background-image: url('../assets/home/sujet-4.jpg');
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+.CardScaleImg:hover {
+	transform: scale(1.2);
+}
+
 .NameCard {
 	z-index: 99;
 }
@@ -250,9 +281,9 @@ header {
 	background-image: url('../assets/home/sujet-3.jpg');
 }
 
-.Card:nth-child(5) {
+/*.Card:nth-child(5) {
 	background-image: url('../assets/home/sujet-4.jpg');
-}
+}*/
 
 .Card:nth-child(6) {
 	background-image: url('../assets/home/sujet-5.jpg');
@@ -348,10 +379,10 @@ footer > a:first-child {
 	top: 0;
 	left: 0;
 	right: 0;
-	width: 100%;
 	z-index: 150;
 	margin-bottom: 100px;
 	background-color: #FFFFFF;
+	width: initial;
 }
 
 .RelativeContent {
@@ -412,6 +443,11 @@ footer > a:first-child {
 	display: none;
 }
 
+.NavArrowBack {
+	width: 8px;
+	margin-right: 10px;
+}
+
 @media screen and (max-width: 1035px) {
 	.H1NavTemplate, .MobileH1NavTemplate {
 		font-size: 15px;
@@ -427,7 +463,7 @@ footer > a:first-child {
 	.MobileH1NavTemplate {
 		display: flex;
 		margin: 0px 0px 30px 20px;
-		width: fit-content;
+		width: auto;
 	}
 }
 
@@ -949,6 +985,7 @@ footer > a:first-child {
 	align-items: center;
 	position: relative;
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 @media screen and (max-width: 822px) {
@@ -976,8 +1013,8 @@ footer > a:first-child {
 }
 
 .ArticleTitle {
-	font-size: 23px;
-	line-height: 28px;
+	font-size: 22px;
+	line-height: 25px;
 	margin-top: 15px;
 	margin-bottom: 0px;
 	max-width: 400px;
