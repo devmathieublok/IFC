@@ -28,6 +28,10 @@ input,textarea,button,select,a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+a:visited {
+	text-decoration: none;
+}
+
 /*Home*/
 .Home {
 	max-width: 1440px;
@@ -101,8 +105,8 @@ header {
 
 @media screen and (max-width: 500px) {
 	.Home_H1 {
-		font-size: 38px;
-		line-height: 55px;
+		font-size: 37px;
+		line-height: 50px;
 	}
 }
 
@@ -169,6 +173,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	position: relative;
+	overflow: hidden;
 }
 
 .CardScale {
@@ -315,10 +320,17 @@ header {
 	}
 }
 
+@media screen and (max-width: 822px) {
+	.VilleRight, .VilleLeft {
+		opacity: 0 !important;
+		display: none;
+	}
+}
+
 footer {
 	margin-top: 50px;
 	background-color: #dcdcdc;
-	height: 70px;
+	height: 200px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -366,12 +378,7 @@ footer > a:first-child {
 }
 
 .LinkBackHome {
-	text-decoration: none;
-	transition: all ease-out 0.5s;
-}
-
-.LinkBackHome:hover {
-	opacity: 0.5;
+	margin-right: 7px;
 }
 
 .NavFixed {
@@ -437,6 +444,8 @@ footer > a:first-child {
 	font-size: 22px;
 	margin-left: 50px;
 	text-decoration: none;
+	outline: 0;
+	border-style: none;
 }
 
 .MobileH1NavTemplate {
@@ -835,6 +844,7 @@ footer > a:first-child {
 	flex-direction: column;
 	align-items: flex-end;
 	margin:0px 50px;
+	position: relative;
 }
 
 .QuoteContentReverse {
@@ -887,7 +897,7 @@ footer > a:first-child {
 
 .ProfilInfos > h3 {
 	margin:0px;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .ProfilInfos > p {
@@ -919,21 +929,19 @@ footer > a:first-child {
 @media screen and (max-width: 620px) {
 	.ProfilInfos > img{
 		position: absolute;
-		right: 70px;
+		right: 0px;
 	}
 }
 
 @media screen and (max-width: 375px) {
 	.ProfilInfos > img{
-		width: 90px;
-		right: 20px;
+		width: 70px;
 	}
 }
 
 @media screen and (max-width: 325px) {
 	.ProfilInfos > img{
-		width: 60px;
-		right: 20px;
+		width: 50px;
 	}
 }
 
@@ -944,7 +952,7 @@ footer > a:first-child {
 
 .QuoteElementPhone {
 	margin-bottom: -100px;
-	transform: rotate(5deg);
+	transform: rotate(5deg) !important;
 	width: 200px;
 }
 
@@ -961,9 +969,9 @@ footer > a:first-child {
 
 	.QuoteElementPhone {
 		position: absolute;
-    	width: 100px;
+    	width: 105px;
     	left: 218px;
-    	top: 80px;
+    	top: 50px;
     	transform: rotate(14deg) !important;
     	z-index: 100;	
 	}
@@ -1071,7 +1079,7 @@ footer > a:first-child {
 }
 
 .ArticleDescription {
-	margin: 10px 0px 0px 0px; 
+	margin: 5px 0px 0px 0px; 
 	max-width: 600px;
 	color: grey;
 	line-height: 22px;
