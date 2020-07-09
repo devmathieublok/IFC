@@ -423,7 +423,7 @@ footer > a:first-child {
 /*Tablet*/
 @media screen and (max-width: 635px) {
 	.RelativeContent {
-		top: 150px;
+		top: 180px;
 		position: absolute;
 	}
 }
@@ -824,7 +824,7 @@ footer > a:first-child {
 @media screen and (max-width: 822px) {
 	.SectionQuote {
 		width: initial;
-		padding: 20px;
+		padding: 30px;
 	}
 
 	.SectionQuoteReverse {
