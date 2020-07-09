@@ -26,10 +26,13 @@ html, body {
 
 input,textarea,button,select,a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }
 
-a:visited {
-	text-decoration: none;
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }
 
 /*Home*/
