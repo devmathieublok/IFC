@@ -1289,6 +1289,8 @@ footer > a:first-child {
 	left: 25px;
 	transition: all ease-out 0.3s;
 	font-family: "Avenir", sans-serif;
+	display: flex;
+	align-items: center;
 }
 
 .LinkTwitterWrapper:hover {
