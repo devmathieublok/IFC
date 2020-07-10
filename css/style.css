@@ -1291,6 +1291,7 @@ footer > a:first-child {
 	font-family: "Avenir", sans-serif;
 	display: flex;
 	align-items: center;
+	background-color: red;
 }
 
 .LinkTwitterWrapper:hover {
