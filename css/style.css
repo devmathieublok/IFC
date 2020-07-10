@@ -29,18 +29,12 @@ html, body {
 }
 
 @font-face {
- font-family: "AvenirMedium";
+ font-family: "Avenir-Medium";
  src: url("../assets/fonts/avenir-medium.ttf");
  font-weight: 500;
  font-style: normal;
 }
 
-/*@font-face {
-  font-family: 'Gobold';
-  src: url('../assets/fonts/gobold.ttf') format('embedded-opentype'), 
-   url('../assets/fonts/gobold.ttf') format('woff'), 
-   url('../assets/fonts/gobold.ttf')  format('truetype'),
-}*/
 
 input,textarea,button,select,a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -1173,7 +1167,7 @@ footer > a:first-child {
 	margin-bottom: 0px;
 	max-width: 400px;
 	font-weight: 500;
-	font-family: "AvenirMedium", sans-serif;
+	font-family: "Avenir-Medium", sans-serif;
 	color: #111213;
 }
 
@@ -1262,7 +1256,7 @@ footer > a:first-child {
 	line-height: 30px;
 	margin:0px;
 	font-weight: 500;
-	font-family: "AvenirMedium", sans-serif;
+	font-family: "Avenir-Medium", sans-serif;
 }
 
 .SocialPostDescription {
@@ -1294,6 +1288,7 @@ footer > a:first-child {
 	bottom: 25px;
 	left: 25px;
 	transition: all ease-out 0.3s;
+	font-family: "Avenir", sans-serif;
 }
 
 .LinkTwitterWrapper:hover {
@@ -1316,7 +1311,8 @@ footer > a:first-child {
 
 .LinkTwitterWrapper > a {
 	margin: 0px 0px 0px 20px;
-	font-size: 15px;
+	font-size: 13px;
+	font-family: "Avenir-Medium", sans-serif;
 }
 
 .IcoTwitter {
