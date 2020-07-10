@@ -10,10 +10,13 @@ html, body {
 	display: none !important;
 }
 
+.NoMargin {
+	margin: 0px !important;
+}
+
 @font-face {
  font-family: "Gobold";
  src: url("../assets/fonts/gobold.ttf") format('truetype');
- src: url("../assets/fonts/gobold.ttf") format('woff');
  font-weight: 300;
  font-style: normal;
 }
@@ -22,6 +25,13 @@ html, body {
  font-family: "Avenir";
  src: url("../assets/fonts/avenir.ttf");
  font-weight: 300;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: "AvenirMedium";
+ src: url("../assets/fonts/avenir-medium.ttf");
+ font-weight: 500;
  font-style: normal;
 }
 
@@ -401,6 +411,7 @@ footer > a:first-child {
 
 .ShapeSeparator {
 	width: 100vw;
+	margin-top: -1px;
 }
 
 @media screen and (max-width: 414px) {
@@ -688,16 +699,13 @@ footer > a:first-child {
 /*Burger Menu*/
 
 .SectionIntro {
-	background-color: #F5E9F2;
-    display: flex;
-    align-items: center;
-    padding: 80px 0px;
+	background-color: #ac026e;
 }
 
 /*Tablet 822px*/
 @media screen and (max-width: 822px) {
 	.SectionIntro {
-		padding: 50px 0px;
+		padding: 0px 0px 50px 0px;
 	}
 }
 /*Tablet 822px*/
@@ -705,7 +713,7 @@ footer > a:first-child {
 /*Mobile 505px*/
 @media screen and (max-width: 505px) {
 	.SectionIntro {
-		padding: 30px 0px;
+		padding: 0px 0px 30px 0px;
 	}
 }
 /*Tablet 505px*/
@@ -744,14 +752,14 @@ footer > a:first-child {
 /*Tablet 822px*/
 
 .IntroContent {
-	margin-left: 90px;
+	margin: 80px 0px;
 	position: relative;
 }
 
 /*Tablet 822px*/
 @media screen and (max-width: 822px) {
 	.IntroContent {
-		margin-left: 0px;
+		margin: 30px 0px;
 	}
 }
 /*Tablet 822px*/
@@ -759,9 +767,9 @@ footer > a:first-child {
 .IntroH2 {
 	font-size: 40px;
 	margin-top: 0px;
-	margin-bottom: 10px;
-	color: #ac026e;
+	color: #FFFFFF;
 	font-family: "Gobold", sans-serif;
+	text-align: center;
 }
 
 /*Mobile 505px*/
@@ -773,31 +781,64 @@ footer > a:first-child {
 /*Mobile 505px*/
 
 .IntroP {
-	font-size: 20px;
-	color: #ac026e;
+	font-size: 22px;
+	color: #FFFFFF;
 	font-family: "Avenir", sans-serif;
-	max-width: 710px;
-	margin: 0px;
+	max-width: 850px;
+	margin: 10px 0px 0px 0px;
+	text-align: center;
 }
 
 /*Mobile 505px*/
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 505px) {
 	.IntroP {
-		max-width: 100%;
-		font-size: 4.5vw;
+		text-align: left;
+	}
+}
+/*Mobile 505px*/
+
+/*Mobile 505px*/
+@media screen and (max-width: 414px) {
+	.IntroP, .ArticleDescription, .SocialPostDescription {
+		max-width: 100% !important;
+		font-size: 4.5vw !important;
 	}
 }
 /*Mobile 505px*/
 
 .IntroImg {
-	transform: rotate(-5deg) !important;
+	min-height: 500px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+    box-sizing: border-box;
+    width: 100vw;
+    min-width: 1440px;
+    margin-left: calc(-50vw + 50%);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.IntroImgCommunication {
+	background-image: url('../assets/template/page-communication/intro.jpg');
 }
 
 /*Tablet 822px*/
 @media screen and (max-width: 822px) {
 	.IntroImg {
-		width: 250px;
 		margin-bottom: 30px;
+		min-width: 100%;
+		width: 100%;
+		min-width: 100vw;
+	}
+}
+
+@media screen and (max-width: 505px) {
+	.IntroImg {
+		min
 	}
 }
 /*Tablet 822px*/
@@ -1076,16 +1117,39 @@ footer > a:first-child {
 	position: relative;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	min-width: auto;
+}
+
+.SectionArticle2column {
+	align-items: flex-start !important;
+	justify-content: space-between !important;
 }
 
 @media screen and (max-width: 822px) {
 	.SectionArticle {
 		flex-wrap: wrap;
+		min-width: auto;
 	}
 }
 
 .Article {
-	margin-right: 50px;
+	margin: 0px 50px 0px 0px;
+	width: 100%;
+}
+
+@media screen and (max-width: 822px) {
+	.SectionArticle2column > .Article:first-child {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 505px) {
+	.Article {
+		margin-bottom: 0px;
+	}
+}
+
+.ArticleImg {
 	width: 100%;
 }
 
@@ -1108,6 +1172,9 @@ footer > a:first-child {
 	margin-top: 15px;
 	margin-bottom: 0px;
 	max-width: 400px;
+	font-weight: 500;
+	font-family: "AvenirMedium", sans-serif;
+	color: #111213;
 }
 
 .ArticleDescription {
@@ -1137,6 +1204,146 @@ footer > a:first-child {
 		width: 100%;
 		height: auto;
 		margin-top: 50px;
+	}
+}
+
+.SocialPostWrapper {
+	background-color: #9C397A;
+	height: 100%;
+	min-height: 450px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:70px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+@media screen and (max-width: 822px) {
+	.SocialPostWrapper {
+		flex-direction: column;
+		padding: 50px 30px;
+		min-height: auto;
+	}
+}
+
+.SocialPostContent {
+	font-family: "Avenir", sans-serif;
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	width: 480px;
+	margin-right: 50px;
+}
+
+@media screen and (max-width: 822px) {
+	.SocialPostContent {
+		padding: 0px 0px 50px 0px;
+		text-align: center;
+		margin-right: 0px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 505px) {
+	.SocialPostContent {
+		padding: 0px 0px 30px 0px;
+		text-align: center;
+		margin-right: 0px;
+		width: 100%;
+	}
+}
+
+
+.SocialPostTitle {
+	font-size: 25px;
+	line-height: 30px;
+	margin:0px;
+	font-weight: 500;
+	font-family: "AvenirMedium", sans-serif;
+}
+
+.SocialPostDescription {
+	font-size: 17px;
+	font-weight: 300;
+}
+
+.SocialPostImgWrapper {
+	width: 550px;
+}
+
+@media screen and (max-width: 822px) {
+	.SocialPostImgWrapper {
+		width: 100%;
+	}
+}
+
+.SocialPostImg {
+	width: 100%;
+	height: 100%;
+	transform: rotate(-3deg);
+}
+
+.LinkTwitterWrapper {
+	display: flex;
+	width: 100%;
+	color: #FFFFFF;
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	transition: all ease-out 0.3s;
+}
+
+.LinkTwitterWrapper:hover {
+	opacity: 0.3;
+}
+
+@media screen and (max-width: 822px) {
+	.LinkTwitterWrapper {
+		position: unset;
+		margin-top: 50px;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 505px) {
+	.LinkTwitterWrapper {
+		margin-top: 50px;
+	}
+}
+
+.LinkTwitterWrapper > a {
+	margin: 0px 0px 0px 20px;
+	font-size: 15px;
+}
+
+.IcoTwitter {
+	width: 30px;
+}
+
+/*Section Margin Mobile*/
+
+@media screen and (max-width: 822px) {
+	.SectionQuote, .SectionArticle {
+		margin: 40px 0px;
+	}
+}
+
+.SectionVilleFooter {
+	margin-top: 50px;
+}
+
+.VilleFooter {
+	width: 500px;
+	display: block;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 530px) {
+	.VilleFooter {
+		width: 100%;
 	}
 }
 /*Template*/
