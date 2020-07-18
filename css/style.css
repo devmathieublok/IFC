@@ -1363,8 +1363,8 @@ footer > a:first-child {
 
 @media screen and (max-width: 414px) {
 	.ColumnSpeech > h1 {
-		font-size: 12vw;
-		line-height: 13vw;
+		font-size: 10vw;
+		line-height: 11vw;
 	}
 }
 
