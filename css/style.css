@@ -553,6 +553,10 @@ footer > a:first-child {
 	display: block;
 }
 
+.SquareNavItem > a {
+	border:none;
+}
+
 @media screen and (max-width: 1035px) {
 	.PageName {
 		font-size: 13px;
