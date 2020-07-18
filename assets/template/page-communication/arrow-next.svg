@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>Group Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-155.000000, -115.000000)" fill="#AC026E">
+            <g id="Group-Copy" transform="translate(178.000000, 138.000000) rotate(-180.000000) translate(-178.000000, -138.000000) translate(155.000000, 115.000000)">
+                <circle id="Oval" fill-opacity="0.1" cx="23" cy="23" r="23"></circle>
+                <path d="M33,22.8178643 C32.986111,22.6651356 32.920152,22.4612342 32.814822,22.3468671 L27.259268,16.2463212 C27.016927,15.9275431 26.517272,15.9285982 26.209749,16.1893135 C25.902227,16.4500288 25.878783,16.9132712 26.148153,17.1883156 L30.627323,22.1001543 L13.740741,22.1001543 C13.331667,22.1001543 13,22.4214731 13,22.8178643 C13,23.2142555 13.331667,23.5355743 13.740741,23.5355743 L30.627323,23.5355743 L26.148157,28.4474022 C25.854231,28.7224287 25.93689,29.1941077 26.244416,29.4548159 C26.551938,29.715524 27.016931,29.6969353 27.259271,29.3893966 L32.814826,23.2888615 C32.963311,23.1330108 32.991641,22.9638824 33,22.8178643 L33,22.8178643 Z" id="Path" fill-rule="nonzero" transform="translate(23.000000, 22.818182) rotate(-180.000000) translate(-23.000000, -22.818182) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
