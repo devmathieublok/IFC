@@ -25,10 +25,16 @@ html, body {
 }
 
 @font-face {
- font-family: "Criteria";
- src: url("../assets/fonts/criteria.otf");
- font-weight: 300;
- font-style: normal;
+  font-family: "Criteria";
+  src: url("../assets/fonts/criteria/criteria.eot"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/criteria/criteria.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../assets/fonts/criteria/criteria.otf") format("opentype"), /* Open Type Font */
+    url("../assets/fonts/criteria/criteria.svg") format("svg"), /* Legacy iOS */
+    url("../assets/fonts/criteria/criteria.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../assets/fonts/criteria/criteria.woff") format("woff"), /* Modern Browsers */
+    url("../assets/fonts/criteria/criteria.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -80,6 +86,7 @@ header {
 .Home_Logo {
 	width: 200px;
 	height: 100%;
+	margin-top: 4px;
 }
 
 @media screen and (max-width: 320px) {
@@ -432,7 +439,7 @@ footer > a:first-child {
 	font-family: "Criteria", sans-serif;
 	text-transform: uppercase;
 	color: grey;
-	font-size: 22px;
+	font-size: 17px;
 	margin-left: 50px;
 	text-decoration: none;
 	outline: 0;
@@ -488,7 +495,7 @@ footer > a:first-child {
 		position: absolute;
 		font-size: 13px;
 		color: grey;
-		left: -40px;
+		left: -50px;
 		top: 12px;
 	}
 }
@@ -780,7 +787,7 @@ footer > a:first-child {
 }
 
 .IntroImgSituationUrgence {
-	background: grey;
+	background: #b8b0b0;
 }
 
 @media screen and (max-width: 822px) {
@@ -817,35 +824,37 @@ footer > a:first-child {
 
 .IntroSiren {
 	position: absolute;
-	top: -170px;
-	right: 30px;
-	width: 140px;
+	top: -190px;
+	right: -20px;
+	width: 160px;
 }
 
-.IntroBook {
+.IntroSmiley {
 	position: absolute;
-	top: -120px;
-	right: 30px;
+	top: -150px;
+	right: -60px;
 	width: 130px;
 }
 
-@media screen and (max-width: 505px) {
-	.IntroBook {
+@media screen and (max-width: 825px) {
+	.IntroSmiley {
 		top: -106px;
 		width: 95px;
+		right: 30px;
 	}
 }
 
 @media screen and (max-width: 825px) {
 	.IntroSiren {
-		top: -140px;
+		top: -128px;
 		width: 120px;
+		right: 20px;
 	}
 }
 
 @media screen and (max-width: 505px) {
 	.IntroSiren {
-		top: -106px;
+		top: -120px;
 		width: 100px;
 	}
 }
@@ -1338,31 +1347,42 @@ footer > a:first-child {
 
 .ArticleBack, .ArticleNext {
 	position: relative;
+
 }
 
 
 .ArticleBack:hover::after {
+	opacity: 1;
+}
+
+.ArticleBack::after {
+	opacity: 0;
 	content: 'Accueil';
 	position: absolute;
 	left: 60px;
 	top: 12px;
 	font-family: "Avenir", sans-serif;
 	color: #ac026e;
-	opacity: 1;
 	text-transform: uppercase;
 	width: 100px;
+	transition: all ease-out 0.2s;
 }
 
-.ArticleNext:hover::before {
+.ArticleNext::before {
 	content: 'Article suivant';
 	position: absolute;
 	right: 30px;
 	top: 12px;
 	font-family: "Avenir", sans-serif;
 	color: #ac026e;
-	opacity: 1;
+	opacity: 0;
 	text-transform: uppercase;
 	width: 160px;
+	transition: all ease-out 0.2s;
+}
+
+.ArticleNext:hover::before {
+	opacity: 1;
 }
 
 @media screen and (max-width: 750px) {
