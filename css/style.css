@@ -5,6 +5,7 @@ html, body {
 	margin: 0 auto;
 	overflow-x: hidden;
 	text-rendering:optimizeLegibility;
+	-webkit-font-smoothing: antialiased !important;
 	font-weight: 400;
 }
 
@@ -417,9 +418,7 @@ footer > a:first-child {
 	}
 }
 
-.Home_Logo {
-	margin-top: 15px;
-}
+
 
 @media screen and (max-width: 1120px) {
 	.Home_Logo {
@@ -780,6 +779,10 @@ footer > a:first-child {
 	background-image: url('../assets/template/page-communication/intro.jpg');
 }
 
+.IntroImgSituationUrgence {
+	background: grey;
+}
+
 @media screen and (max-width: 822px) {
 	.IntroImg {
 		margin-bottom: 30px;
@@ -795,6 +798,8 @@ footer > a:first-child {
 	}
 }
 
+/*Ico Intro*/
+
 .IntroNetwork {
 	position: absolute;
 	top: -120px;
@@ -808,6 +813,44 @@ footer > a:first-child {
 		width: 100px;
 	}
 }
+
+
+.IntroSiren {
+	position: absolute;
+	top: -170px;
+	right: 30px;
+	width: 140px;
+}
+
+.IntroBook {
+	position: absolute;
+	top: -120px;
+	right: 30px;
+	width: 130px;
+}
+
+@media screen and (max-width: 505px) {
+	.IntroBook {
+		top: -106px;
+		width: 95px;
+	}
+}
+
+@media screen and (max-width: 825px) {
+	.IntroSiren {
+		top: -140px;
+		width: 120px;
+	}
+}
+
+@media screen and (max-width: 505px) {
+	.IntroSiren {
+		top: -106px;
+		width: 100px;
+	}
+}
+
+/*Ico Intro*/
 
 .SectionQuote {
     display: flex;
