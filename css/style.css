@@ -10,6 +10,11 @@ html, body {
 	font-weight: normal !important;
 }
 
+h2 {
+	font-weight: 400;
+	font-weight: normal;
+}
+
 .Hide {
 	display: none !important;
 }
