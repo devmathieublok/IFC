@@ -5,6 +5,7 @@ html, body {
 	margin: 0 auto;
 	overflow-x: hidden;
 	text-rendering:optimizeLegibility;
+	font-weight: 400;
 }
 
 .Hide {
@@ -18,6 +19,13 @@ html, body {
 @font-face {
  font-family: "Gobold";
  src: url("../assets/fonts/gobold.ttf") format('truetype');
+ font-weight: 300;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: "Criteria";
+ src: url("../assets/fonts/criteria.otf");
  font-weight: 300;
  font-style: normal;
 }
@@ -52,7 +60,7 @@ a {
 .Home {
 	max-width: 1440px;
 	margin: 0 auto;
-	font-family: "Gobold", sans-serif;
+	font-family: "Criteria", sans-serif;
 	padding: 0px 20px;
 }
 
@@ -110,7 +118,7 @@ header {
 
 
 .Home_H1 {
-	font-size: 37px;
+	font-size: 36px;
 	line-height: 50px;
 	text-align: center;
 	text-transform: uppercase;
@@ -121,8 +129,8 @@ header {
 
 @media screen and (max-width: 500px) {
 	.Home_H1 {
-		font-size: 37px;
-		line-height: 50px;
+		font-size: 8.5vw;
+		line-height: 9.8vw;
 	}
 }
 
@@ -377,7 +385,7 @@ footer > a:first-child {
 .RelativeContent {
 	position: absolute;
 	width: 100%;
-	top: 130px;
+	top: 100px;
 	width: 100%;
 }
 
@@ -396,7 +404,7 @@ footer > a:first-child {
 }
 
 .NavTemplate {
-	height: 120px;
+	height: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -412,7 +420,7 @@ footer > a:first-child {
 	margin-top: 15px;
 }
 
-@media screen and (max-width: 1035px) {
+@media screen and (max-width: 1120px) {
 	.Home_Logo {
 		margin-top: 10px;
 		width: 150px;
@@ -421,7 +429,7 @@ footer > a:first-child {
 }
 
 .H1NavTemplate, .MobileH1NavTemplate {
-	font-family: "Gobold", sans-serif;
+	font-family: "Criteria", sans-serif;
 	text-transform: uppercase;
 	color: grey;
 	font-size: 22px;
@@ -440,7 +448,7 @@ footer > a:first-child {
 	margin-right: 10px;
 }
 
-@media screen and (max-width: 1035px) {
+@media screen and (max-width: 1120px) {
 	.H1NavTemplate, .MobileH1NavTemplate {
 		font-size: 15px;
 		margin-left: 30px;
@@ -475,7 +483,7 @@ footer > a:first-child {
 	}
 
 	.SquareNav::before {
-		font-family: "Gobold", sans-serif;
+		font-family: "Criteria", sans-serif;
 		content: 'Menu';
 		position: absolute;
 		font-size: 13px;
@@ -534,16 +542,21 @@ footer > a:first-child {
 }
 
 .PageName {
-	font-family: "Gobold", sans-serif;
+	font-family: "Criteria", sans-serif;
 	font-size: 15px;
 	color: #ac026e;
 	text-align: right;
 	position: absolute;
 	display: none;
 	margin: 0px;
-	top:23px;
+	top:22px;
 	right: 120px;
-	width: 220px;
+	width: max-content;
+}
+
+.PageNameBreakLine {
+	position: absolute;
+	top: 18px;
 }
 
 .PageNameActive {
@@ -560,7 +573,7 @@ footer > a:first-child {
 
 @media screen and (max-width: 1035px) {
 	.PageName {
-		font-size: 13px;
+		font-size: 15px;
 	}
 }
 
@@ -619,7 +632,7 @@ footer > a:first-child {
 .BurgerMenuItem > a {
 	color: #FFF;
 	font-size: 20px;
-	font-family: "Gobold", sans-serif;
+	font-family: "Criteria", sans-serif;
 	text-align: center;
 	margin: 0px 0px 30px 0px; 
 	display: block;
@@ -705,7 +718,7 @@ footer > a:first-child {
 	font-size: 40px;
 	margin-top: 0px;
 	color: #FFFFFF;
-	font-family: "Gobold", sans-serif;
+	font-family: "Criteria", sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 80px;
@@ -807,11 +820,11 @@ footer > a:first-child {
 }
 
 .QuoteBlueBg {
-	background-color: #E2ECEA;
+	background-color: #5EB3AA;
 }
 
 .QuoteOrangeBg {
-	background-color: #F7E6CF;
+	background-color: #F3A55A;
 }
 
 .SectionQuoteReverse {
@@ -867,7 +880,7 @@ footer > a:first-child {
 	width: max-content;
 	align-items: flex-end;
 	justify-content: flex-end;
-	font-family: "Gobold", sans-serif;
+	font-family: "Criteria", sans-serif;
 }
 
 .ProfilInfosColorOrange {
@@ -895,10 +908,13 @@ footer > a:first-child {
 .ProfilInfos > h3 {
 	margin:0px;
 	font-size: 30px;
+	color: #FFF;
 }
 
 .ProfilInfos > p {
 	margin: 0px 20px 6px 20px;
+	color: #FFF;
+	font-size: 12px;
 }
 
 @media screen and (max-width: 506px) {
@@ -908,7 +924,7 @@ footer > a:first-child {
 }
 
 .ProfilInfos > img {
-	width: 90px;
+	width: 70px;
 }
 
 
@@ -944,9 +960,9 @@ footer > a:first-child {
 }
 
 .QuoteElementPhone {
-	margin-bottom: -100px;
+	margin-bottom: -120px;
 	transform: rotate(5deg) !important;
-	width: 200px;
+	width: 185px;
 }
 
 @media screen and (max-width: 822px) {
@@ -1287,9 +1303,10 @@ footer > a:first-child {
 	left: 60px;
 	top: 12px;
 	font-family: "Avenir", sans-serif;
-	width: 130px;
 	color: #ac026e;
 	opacity: 1;
+	text-transform: uppercase;
+	width: 100px;
 }
 
 .ArticleNext:hover::before {
@@ -1298,9 +1315,10 @@ footer > a:first-child {
 	right: 30px;
 	top: 12px;
 	font-family: "Avenir", sans-serif;
-	width: 130px;
 	color: #ac026e;
 	opacity: 1;
+	text-transform: uppercase;
+	width: 160px;
 }
 
 @media screen and (max-width: 750px) {
@@ -1359,7 +1377,7 @@ footer > a:first-child {
 }
 
 .ColumnSpeech > h1 {
-	font-family: "Avenir-Medium", sans-serif;
+	font-family: "Criteria", sans-serif;
 	font-size: 50px;
 	line-height: 55px;
 	color: #ac026e;
@@ -1410,8 +1428,8 @@ footer > a:first-child {
 }
 
 .SpeechQuote {
-	width: 100px;
-	margin-bottom: 10px;
+	width: 50px;
+	margin: 10px 0px 10px 0px;
 }
 
 .SpeechExergue {
@@ -1420,7 +1438,7 @@ footer > a:first-child {
 	align-items: flex-end;
 	text-align: right;
 	font-size: 18px;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 }
 
 .Iexergue {
