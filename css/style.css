@@ -33,8 +33,8 @@ html, body {
     url("../assets/fonts/criteria/criteria.ttf") format("truetype"), /* Safari, Android, iOS */
     url("../assets/fonts/criteria/criteria.woff") format("woff"), /* Modern Browsers */
     url("../assets/fonts/criteria/criteria.woff2") format("woff2"); /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -1541,7 +1541,7 @@ footer > a:first-child {
 
 @media screen and (max-width: 414px) {
 	.PresidenteImgMobile {
-		width: 60%;
+		width: 65%;
 		margin-bottom: 40px;
 		margin-left: 10px;
 	}
