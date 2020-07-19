@@ -6,7 +6,8 @@ html, body {
 	overflow-x: hidden;
 	text-rendering:optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
-	font-weight: 400;
+	font-weight: 400 !important;
+	font-weight: normal !important;
 }
 
 .Hide {
