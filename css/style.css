@@ -808,8 +808,20 @@ footer > a:first-child {
 	background-image: url('../assets/template/page-agir-sans-attendre/intro.jpg');
 }
 
+@media screen and (max-width: 505px) {
+	.IntroImgSituationUrgence {
+		background-position: -175px;
+	}
+}
+
 .IntroImgInitiativeSolidaire {
 	background-image: url('../assets/template/page-initiative-solidaire/intro.jpg');
+}
+
+@media screen and (max-width: 505px) {
+	.IntroImgInitiativeSolidaire {
+		background-position: -480px;
+	}
 }
 
 .IntroImgBonMorale {
