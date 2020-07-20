@@ -739,6 +739,12 @@ footer > a:first-child {
 	}
 }
 
+@media screen and (max-width: 505px) {
+	.IntroContent {
+		margin: 0px 0px;
+	}
+}
+
 .IntroH2 {
 	font-size: 40px;
 	margin-top: 0px;
@@ -767,6 +773,7 @@ footer > a:first-child {
 @media screen and (max-width: 505px) {
 	.IntroP {
 		text-align: left;
+		margin-top: 0px;
 	}
 }
 
