@@ -313,6 +313,7 @@ header {
 	width: 240px;
 	right: -20px;
 	top: 200px;
+	transition: all ease-out 0.5s;
 }
 
 .VilleLeft{
@@ -321,6 +322,7 @@ header {
 	width: 640px;
 	left: -300px;
 	top: 200px;
+	transition: all ease-out 0.5s;
 }
 
 
@@ -328,6 +330,7 @@ header {
 	.VilleRight, .VilleLeft {
 		opacity: 0 !important;
 		display: none;
+		transition: all ease-out 0.5s;
 	}
 }
 
@@ -1451,6 +1454,10 @@ footer > a:first-child {
 	background: #EFF4F3;
 }
 
+.BodyHomage {
+	background: #EFEFEF;
+}
+
 .WrapperSpeech {
 	font-family: "Avenir", sans-serif;
 	display: flex;
@@ -1531,7 +1538,7 @@ footer > a:first-child {
 }
 
 .TxtFirstLetter::first-letter {
-	font-size: 50px;
+	font-size: 80px;
 	line-height: 50px;
 }
 
@@ -1623,12 +1630,12 @@ footer > a:first-child {
 	text-transform: uppercase;
 	font-size: 15px;
 	font-family: "Avenir-Medium", sans-serif;
-	width: 265px;
+	width: 280px;
 	display: flex;
 }
 
 .AudioMessage > img {
-	margin-left: 30px;
+	margin-left: 20px;
 	cursor: pointer;
 	transition: all ease-out 0.2s;
 }
