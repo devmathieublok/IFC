@@ -33,12 +33,6 @@ h2 {
 	}
 }
 
-@font-face {
- font-family: "Gobold";
- src: url("../assets/fonts/gobold.ttf") format('truetype');
- font-weight: 300;
- font-style: normal;
-}
 
 @font-face {
   font-family: "Criteria";
@@ -56,6 +50,13 @@ h2 {
 @font-face {
  font-family: "Avenir";
  src: url("../assets/fonts/avenir.ttf");
+ font-weight: 300;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: "Rimouski";
+ src: url("../assets/fonts/rimouski.ttf");
  font-weight: 300;
  font-style: normal;
 }
