@@ -8,9 +8,9 @@ html, body {
 	-webkit-font-smoothing: antialiased !important;
 }
 
-/*h1, h2, h3, h4, h5, strong, b { 
-    font-weight: 400 !important; 
-} */
+.MarginTop {
+	margin-top: 40px;
+}
 
 .Hide {
 	display: none !important;
@@ -30,6 +30,9 @@ html, body {
 	}
 }
 
+.WrapperSpeechFlexReverse {
+	flex-direction: row-reverse;
+}
 
 @font-face {
   font-family: "Criteria";
@@ -320,13 +323,8 @@ header {
 	top: 200px;
 }
 
-@media screen and (max-width: 1400px) {
-	.VilleRight, .VilleLeft {
-		opacity: 0.3 !important;
-	}
-}
 
-@media screen and (max-width: 822px) {
+@media screen and (max-width: 1235px) {
 	.VilleRight, .VilleLeft {
 		opacity: 0 !important;
 		display: none;
