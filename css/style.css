@@ -24,7 +24,7 @@ html, body {
 	display: none;
 }
 
-@media screen and (max-width: 505px) {
+@media screen and (max-width: 780px) {
 	.BrOnlyMobile {
 		display: block;
 	}
