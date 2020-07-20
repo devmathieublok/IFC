@@ -1382,14 +1382,14 @@ footer > a:first-child {
 
 .ArticleBack::after {
 	opacity: 0;
-	content: 'Accueil';
+	content: 'Article précédent';
 	position: absolute;
 	left: 60px;
 	top: 12px;
 	font-family: "Avenir", sans-serif;
 	color: #ac026e;
 	text-transform: uppercase;
-	width: 100px;
+	width: 160px;
 	transition: all ease-out 0.2s;
 }
 
