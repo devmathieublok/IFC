@@ -14,7 +14,7 @@
 <body>
 	<section class="Home" data-aos="fade" data-aos-easing="ease-out" data-aos-duration="700" data-aos-offset="200" data-aos-delay="700">
 		<header>
-			<img class="Home_Logo" src="assets/logo.svg" alt="Logo">
+			<img class="Home_Logo Home_Logo_Index" src="assets/logo.svg" alt="Logo">
 		</header>
 		<div data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="900" data-aos-offset="200" data-aos-delay="800" class="VilleRight"><img src="assets/home/ville-right.gif" alt="Ville"></div>
 		<div data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="900" data-aos-offset="200" data-aos-delay="800" class="VilleLeft"><img src="assets/home/ville-left.gif" alt="Ville"></div>
@@ -72,7 +72,7 @@
 <script>
 	AOS.init();
 	AOS.init({
-disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
 startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
 initClassName: 'aos-init', // class applied after initialization
 animatedClassName: 'aos-animate', // class applied on animation

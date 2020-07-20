@@ -120,7 +120,7 @@ header {
 
 .Wrapper_H1_Mobile {
 	margin-top: 35px;
-	margin-bottom: 35px;
+	margin-bottom: 45px;
 	display: none;
 }
 
@@ -155,8 +155,8 @@ header {
 
 @media screen and (max-width: 500px) {
 	.Home_H1 {
-		font-size: 8.5vw;
-		line-height: 9.8vw;
+		font-size: 8vw;
+		line-height: 10vw;
 	}
 }
 
@@ -447,9 +447,14 @@ footer > a:first-child {
 
 @media screen and (max-width: 1120px) {
 	.Home_Logo {
-		margin-top: 10px;
 		width: 150px;
-		height: min-intrinsic;
+	}
+}
+
+@media screen and (max-width: 505px) {
+	.Home_Logo_Index {
+		margin-top: 10px !important;
+		width: 175px !important;
 	}
 }
 
