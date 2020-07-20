@@ -6,14 +6,11 @@ html, body {
 	overflow-x: hidden;
 	text-rendering:optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
-	font-weight: 400 !important;
-	font-weight: normal !important;
 }
 
-h2 {
-	font-weight: 400;
-	font-weight: normal;
-}
+/*h1, h2, h3, h4, h5, strong, b { 
+    font-weight: 400 !important; 
+} */
 
 .Hide {
 	display: none !important;
@@ -377,7 +374,6 @@ footer > a:first-child {
 }
 
 .ShapeSeparator {
-	min-width: 1440px;
 	margin-top: -1px;
 	width: 100%;
 }
