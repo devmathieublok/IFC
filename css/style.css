@@ -1213,9 +1213,9 @@ footer > a:first-child {
 .ArticleDescription {
 	margin: 5px 0px 0px 0px; 
 	max-width: 600px;
-	color: grey;
-	line-height: 22px;
-	font-size: 17px;
+	color: #686868;
+	line-height: 23px;
+	font-size: 18px;
 }
 
 .ArticleVilleGif {
