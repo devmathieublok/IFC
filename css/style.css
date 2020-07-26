@@ -34,18 +34,7 @@ html, body {
 	flex-direction: row-reverse;
 }
 
-@font-face {
-  font-family: "Criteria";
-  src: url("../assets/fonts/criteria/criteria.eot"); /* IE9 Compat Modes */
-  src: url("../assets/fonts/criteria/criteria.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("../assets/fonts/criteria/criteria.otf") format("opentype"), /* Open Type Font */
-    url("../assets/fonts/criteria/criteria.svg") format("svg"), /* Legacy iOS */
-    url("../assets/fonts/criteria/criteria.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("../assets/fonts/criteria/criteria.woff") format("woff"), /* Modern Browsers */
-    url("../assets/fonts/criteria/criteria.woff2") format("woff2"); /* Modern Browsers */
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 @font-face {
  font-family: "Avenir";
@@ -55,8 +44,8 @@ html, body {
 }
 
 @font-face {
- font-family: "Rimouski";
- src: url("../assets/fonts/rimouski.ttf");
+ font-family: "Sentinel";
+ src: url("../assets/fonts/sentinel.ttf");
  font-weight: 300;
  font-style: normal;
 }
@@ -84,7 +73,7 @@ a {
 .Home {
 	max-width: 1440px;
 	margin: 0 auto;
-	font-family: "Criteria", sans-serif;
+	font-family: "Sentinel", sans-serif;
 	padding: 0px 20px;
 }
 
@@ -245,6 +234,7 @@ header {
 .NameCard {
 	z-index: 99;
 	width: 100%;
+	cursor: pointer;
 }
 
 .LinkCard {
@@ -336,7 +326,7 @@ header {
 
 footer {
 	margin-top: 50px;
-	background-color: #dcdcdc;
+	background-color: #ac026e;
 	height: 200px;
 	display: flex;
 	justify-content: center;
@@ -348,7 +338,7 @@ footer {
 	text-decoration:none;
 	text-transform: uppercase;
 	font-size: 13px;
-	color: #111213;
+	color: #FFF;
 	transition:all ease-out 0.4s;
 }
 
@@ -422,7 +412,7 @@ footer > a:first-child {
 
 @media screen and (max-width: 635px) {
 	.RelativeContent {
-		top: 150px;
+		top: 170px;
 		position: absolute;
 	}
 }
@@ -456,7 +446,7 @@ footer > a:first-child {
 }
 
 .H1NavTemplate, .MobileH1NavTemplate {
-	font-family: "Criteria", sans-serif;
+	font-family: "Sentinel", sans-serif;
 	text-transform: uppercase;
 	color: grey;
 	font-size: 17px;
@@ -510,7 +500,7 @@ footer > a:first-child {
 	}
 
 	.SquareNav::before {
-		font-family: "Criteria", sans-serif;
+		font-family: "Sentinel", sans-serif;
 		content: 'Menu';
 		position: absolute;
 		font-size: 13px;
@@ -569,7 +559,7 @@ footer > a:first-child {
 }
 
 .PageName {
-	font-family: "Criteria", sans-serif;
+	font-family: "Sentinel", sans-serif;
 	font-size: 15px;
 	color: #ac026e;
 	text-align: right;
@@ -659,7 +649,7 @@ footer > a:first-child {
 .BurgerMenuItem > a {
 	color: #FFF;
 	font-size: 20px;
-	font-family: "Criteria", sans-serif;
+	font-family: "Sentinel", sans-serif;
 	text-align: center;
 	margin: 0px 0px 30px 0px; 
 	display: block;
@@ -751,7 +741,7 @@ footer > a:first-child {
 	font-size: 40px;
 	margin-top: 0px;
 	color: #FFFFFF;
-	font-family: "Criteria", sans-serif;
+	font-family: "Sentinel", sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 80px;
@@ -980,7 +970,7 @@ footer > a:first-child {
 	width: max-content;
 	align-items: flex-end;
 	justify-content: flex-end;
-	font-family: "Criteria", sans-serif;
+	font-family: "Sentinel", sans-serif;
 }
 
 .ProfilInfosColorOrange {
@@ -1471,6 +1461,12 @@ footer > a:first-child {
 	}
 }
 
+@media screen and (max-width: 414px) {
+	.WrapperSpeech {
+		margin-top: 10px;
+	}
+}
+
 @media screen and (max-width: 375px) {
 	.WrapperSpeech {
 		margin-top: 30px;
@@ -1492,7 +1488,7 @@ footer > a:first-child {
 }
 
 .ColumnSpeech > h1 {
-	font-family: "Criteria", sans-serif;
+	font-family: "Sentinel", sans-serif;
 	font-size: 50px;
 	line-height: 55px;
 	color: #ac026e;
@@ -1572,6 +1568,8 @@ footer > a:first-child {
 	width: 100%;
 	margin-bottom: 30px;
 	transform: rotate(-5deg);
+	box-shadow: 0 15px 20px 0 rgba(0,0,0,0.25);
+	margin-left: 10px;
 }
 
 .PresidenteImgMobile {
@@ -1587,6 +1585,8 @@ footer > a:first-child {
 		display: block;
 		margin-bottom: 50px;
 		transform: rotate(-5deg);
+		box-shadow: 0 15px 20px 0 rgba(0,0,0,0.25);
+		margin-left: 10px;
 	}
 }
 
@@ -1594,7 +1594,6 @@ footer > a:first-child {
 	.PresidenteImgMobile {
 		width: 65%;
 		margin-bottom: 40px;
-		margin-left: 10px;
 	}
 }
 
@@ -1630,7 +1629,7 @@ footer > a:first-child {
 	text-transform: uppercase;
 	font-size: 15px;
 	font-family: "Avenir-Medium", sans-serif;
-	width: 280px;
+	width: 250px;
 	display: flex;
 }
 
