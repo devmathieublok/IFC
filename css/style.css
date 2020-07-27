@@ -1023,7 +1023,7 @@ footer > a:first-child {
 .ProfilInfos > img {
 	width: 70px;
 	position: absolute;
-	left: 0;
+	left: 20px;
 	display: none;
 }
 
