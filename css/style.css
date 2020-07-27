@@ -12,6 +12,11 @@ html, body {
 	margin-top: 40px;
 }
 
+.LowerCaseTxt {
+	text-transform: lowercase; 
+	font-weight: lighter;
+}
+
 .Hide {
 	display: none !important;
 }
@@ -109,7 +114,7 @@ header {
 
 .Wrapper_H1_Mobile {
 	margin-top: 35px;
-	margin-bottom: 45px;
+	margin-bottom: 35px;
 	display: none;
 }
 
@@ -133,7 +138,7 @@ header {
 
 
 .Home_H1 {
-	font-size: 36px;
+	font-size: 45px;
 	line-height: 50px;
 	text-align: center;
 	text-transform: uppercase;
@@ -412,7 +417,7 @@ footer > a:first-child {
 
 @media screen and (max-width: 635px) {
 	.RelativeContent {
-		top: 170px;
+		top: 140px;
 		position: absolute;
 	}
 }
@@ -449,7 +454,7 @@ footer > a:first-child {
 	font-family: "Sentinel", sans-serif;
 	text-transform: uppercase;
 	color: grey;
-	font-size: 17px;
+	font-size: 20px;
 	margin-left: 50px;
 	text-decoration: none;
 	outline: 0;
@@ -467,7 +472,7 @@ footer > a:first-child {
 
 @media screen and (max-width: 1120px) {
 	.H1NavTemplate, .MobileH1NavTemplate {
-		font-size: 15px;
+		font-size: 17px;
 		margin-left: 30px;
 	}
 }
@@ -485,7 +490,7 @@ footer > a:first-child {
 
 	.MobileH1NavTemplate {
 		display: flex;
-		margin: 0px 0px 30px 20px;
+		margin: 0px 0px 20px 20px;
 		width: auto;
 	}
 }
@@ -653,6 +658,13 @@ footer > a:first-child {
 	text-align: center;
 	margin: 0px 0px 30px 0px; 
 	display: block;
+}
+
+@media screen and (max-width: 320px) {
+	.BurgerMenuItem > a {
+		font-size: 17px;
+		margin-bottom: 20px;
+	}
 }
 
 .BurgerMenuItem > a:last-child {
@@ -1139,9 +1151,18 @@ footer > a:first-child {
 
 @media screen and (max-width: 320px) {
 	.QuoteImgElementDesktop  {
-    	right: -30px;
+    	right: 20px;
+    	top: 60px;
 	}
 }
+
+@media screen and (max-width: 320px) {
+	.QuoteElementPhone {
+		left: 180px;
+		width: 100px;
+	}
+}
+
 
 .QuoteDescription {
 	text-align: right;
