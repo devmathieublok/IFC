@@ -905,7 +905,6 @@ footer > a:first-child {
     box-sizing: border-box;
     margin: 50px auto;
     width: 1340px;
-    overflow: hidden;
     position: relative;
 }
 
@@ -971,7 +970,15 @@ footer > a:first-child {
 	align-items: flex-end;
 	justify-content: flex-end;
 	font-family: "Sentinel", sans-serif;
+	flex-direction: column;
+	border-bottom: solid 2px #FFF;
+	padding-bottom: 5px;
 }
+
+.QuoteContentReverse > .ProfilInfos {
+	align-items: flex-start;
+}
+
 
 .ProfilInfosColorOrange {
 	color: #DF9944;
@@ -983,8 +990,7 @@ footer > a:first-child {
 
 @media screen and (max-width: 822px) {
 	.ProfilInfos  {
-		align-items: flex-end;
-		justify-content: flex-start;
+		align-items: flex-start;
 	}
 }
 
@@ -1002,9 +1008,10 @@ footer > a:first-child {
 }
 
 .ProfilInfos > p {
-	margin: 0px 20px 6px 20px;
+	margin: 0px 0px 6px 0px;
 	color: #FFF;
-	font-size: 12px;
+	font-size: 15px;
+	font-family: "Avenir-Medium", sans-serif;
 }
 
 @media screen and (max-width: 506px) {
@@ -1015,6 +1022,9 @@ footer > a:first-child {
 
 .ProfilInfos > img {
 	width: 70px;
+	position: absolute;
+	left: 0;
+	display: none;
 }
 
 
@@ -1046,13 +1056,14 @@ footer > a:first-child {
 
 .QuoteImgElementDesktop {
 	width: 250px;
-	margin-bottom: -165px;
+	margin-bottom: -115px;
 }
 
 .QuoteElementPhone {
-	margin-bottom: -120px;
+	margin-top: -120px;
 	transform: rotate(5deg) !important;
 	width: 185px;
+	
 }
 
 @media screen and (max-width: 822px) {
@@ -1069,7 +1080,7 @@ footer > a:first-child {
 		position: absolute;
     	width: 105px;
     	left: 218px;
-    	top: 50px;
+    	top: 180px;
     	transform: rotate(14deg) !important;
     	z-index: 100;	
 	}
@@ -1094,7 +1105,7 @@ footer > a:first-child {
 	text-align: right;
 	width: 550px;
 	font-family: "Avenir", sans-serif;
-	margin-top: 10px;
+	margin-top: 30px;
 	font-size: 18px;
 }
 
@@ -1441,7 +1452,7 @@ footer > a:first-child {
 
 /*Le mot de la DG*/
 .BodySpeech {
-	background: #EFF4F3;
+	background: #d7e0ed;
 }
 
 .BodyHomage {
