@@ -928,6 +928,10 @@ footer > a:first-child {
 	background-color: #F3A55A;
 }
 
+.QuotePurpleBg {
+	background-color: #D8626B;
+}
+
 .SectionQuoteReverse {
 	flex-flow: row-reverse;
 }
@@ -1867,8 +1871,7 @@ footer > a:first-child {
 .AfficheWrapper > img {
 	width: 350px;
 	transform: rotate(-5deg);
-	margin-top: 30px;
-	margin-bottom: -100px;
+	margin-top: -50px;
 	margin-left: 80px;
 	box-shadow: 0 2px 20px 0 rgba(0,0,0,0.06);
 }
@@ -1936,4 +1939,32 @@ footer > a:first-child {
 	}
 }
 
+.SectionArticle2columnFlexEnd {
+	align-items: flex-end !important;
+}
+
+.ArticleImgLogo {
+	min-width: 50px !important;
+	width: 100px ;
+}
+
+.QuoteDescription100Width {
+	width: 770px;
+	color: #FFF;
+}
+
+@media screen and (max-width: 820px) {
+	.QuoteDescription100Width {
+		width: 100%;
+	}
+}
+
+.ProfilInfosColorPurple > .QuoteUpReverse {
+	top: 82px !important;
+	left: -70px;
+}
+
+.ProfilInfosColorPurple > .QuoteDownReverse {
+	left: 180px !important;
+}
 /*Agir Sans Attendre*/
