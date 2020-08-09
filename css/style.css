@@ -1879,7 +1879,7 @@ footer > a:first-child {
 
 @media screen and (max-width: 505px) {
 	.AfficheWrapper > img {
-		width: 60%;
+		width: 170px;
 		height: auto;
 		margin-bottom: 0px;
 	}
