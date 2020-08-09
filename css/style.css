@@ -1764,19 +1764,23 @@ footer > a:first-child {
 	line-height: 22px;
 	box-sizing: border-box;
 	padding: 35px;
+	flex-direction: column;
+}
+
+.Box > img {
+	width: 30px;
+}
+
+.Box > p {
+	margin-bottom: 0px;
 }
 
 @media screen and (max-width: 820px) {
 	.Box {
 		width: 100%;
 		margin-top: 50px;
-		height: 250px;
-	}
-}
-
-@media screen and (max-width: 505px) {
-	.Box {
-		padding: 20px;
+		height: 100%;
+		padding: 30px;
 	}
 }
 
@@ -1866,6 +1870,7 @@ footer > a:first-child {
 	margin-top: 30px;
 	margin-bottom: -100px;
 	margin-left: 80px;
+	box-shadow: 0 2px 20px 0 rgba(0,0,0,0.06);
 }
 
 @media screen and (max-width: 820px) {
