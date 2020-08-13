@@ -8,6 +8,10 @@ html, body {
 	-webkit-font-smoothing: antialiased !important;
 }
 
+.MainColor {
+	color: #ac026e !important;
+}
+
 .MarginTop {
 	margin-top: 40px;
 }
@@ -790,14 +794,14 @@ footer > a:first-child {
 }
 
 @media screen and (max-width: 414px) {
-	.IntroP, .ArticleDescription, .SocialPostDescription, .TxtSpeech, .Iexergue, .AfficheContent  {
+	.IntroP, .ArticleDescription, .SocialPostDescription, .TxtSpeech, .Iexergue, .AfficheContent, .ArticleDescriptionCenter {
 		max-width: 100% !important;
 		font-size: 4.5vw !important;
 	}
 }
 
 @media screen and (max-width: 320px) {
-	.IntroP, .ArticleDescription, .SocialPostDescription, .TxtSpeech, .Iexergue, .AfficheContent  {
+	.IntroP, .ArticleDescription, .SocialPostDescription, .TxtSpeech, .Iexergue, .AfficheContent, .ArticleDescriptionCenter {
 		max-width: 100% !important;
 		font-size: 5vw !important;
 	}
@@ -1033,6 +1037,12 @@ footer > a:first-child {
 	margin:0px;
 	font-size: 30px;
 	color: #FFF;
+}
+
+@media screen and (max-width: 505px) {
+	.ProfilInfos > h3 {
+		font-size: 25px;
+	}
 }
 
 .ProfilInfos > p {
@@ -1296,7 +1306,6 @@ footer > a:first-child {
 	line-height: 25px;
 	margin-top: 15px;
 	margin-bottom: 0px;
-	max-width: 500px;
 	font-weight: 500;
 	font-family: "Avenir-Medium", sans-serif;
 	color: #111213;
@@ -1314,10 +1323,31 @@ footer > a:first-child {
 
 .ArticleDescription {
 	margin: 5px 0px 0px 0px; 
-	max-width: 600px;
+	max-width: 650px;
 	color: #686868;
 	line-height: 23px;
 	font-size: 18px;
+}
+
+.ImgDescription {
+	margin: 5px 0px 0px 0px; 
+	max-width: 550px;
+	color: #686868;
+}
+
+.ArticleProfilDescription {
+	font-family: "Avenir-Medium", sans-serif;
+	color: #111213;
+}
+
+.TxtAlignRight {
+	text-align: right !important;
+}
+
+@media screen and (max-width: 505px) {
+	.TxtAlignRight {
+		text-align: left !important;
+	}
 }
 
 .ArticleVilleGif {
@@ -2115,8 +2145,6 @@ footer > a:first-child {
 	}	
 }
 
-
-
 .Mapico {
 	margin-top: -80px;
 }
@@ -2125,4 +2153,43 @@ footer > a:first-child {
 	.Mapico {
 		margin-top: 0px;
 	}	
+}
+
+.SectionBorder {
+	border: solid 8px #dadada;
+	padding: 30px;
+}
+
+@media screen and (max-width: 505px) {
+	.SectionBorder {
+		border: solid 0px #dadada;
+		padding: 0px 20px 0px;
+	}	
+}
+
+.WrapperBodyArticle {
+	max-width: 1270px !important;
+}
+
+.Center {
+	text-align: center;
+}
+
+.ArticleDescriptionCenter {
+	text-align: center;
+	max-width: 750px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 5px;
+	margin-bottom: 80px;
+	color: #686868;
+	line-height: 23px;
+	font-size: 18px;
+}
+
+@media screen and (max-width: 505px) {
+	.Center, .ArticleDescriptionCenter {
+		text-align: left;
+		margin-bottom: 0px;
+	}
 }
