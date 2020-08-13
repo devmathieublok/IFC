@@ -940,6 +940,10 @@ footer > a:first-child {
 	background-color: #D8626B;
 }
 
+.QuoteBlueBg {
+	background-color: #4EA69B;
+}
+
 .SectionQuoteReverse {
 	flex-flow: row-reverse;
 }
@@ -1264,6 +1268,13 @@ footer > a:first-child {
 	.Article {
 		margin-right: 0px;
 		margin-bottom: 50px;
+	}	
+}
+
+@media screen and (max-width: 822px) {
+	.Article:last-child {
+		margin-right: 0px;
+		margin-bottom: 0px;
 	}	
 }
 
