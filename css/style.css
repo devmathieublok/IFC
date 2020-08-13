@@ -762,18 +762,17 @@ footer > a:first-child {
 }
 
 .IntroH2 {
-	font-size: 40px;
+	font-size: 50px;
 	margin-top: 0px;
 	color: #FFFFFF;
 	font-family: "Sentinel", sans-serif;
 	text-align: center;
-	text-transform: uppercase;
 	margin-bottom: 80px;
 }
 
 @media screen and (max-width: 505px) {
 	.IntroH2 {
-		font-size: 8.3vw;
+		font-size: 10vw;
 	}
 }
 
@@ -1302,10 +1301,9 @@ footer > a:first-child {
 }
 
 .ArticleTitle {
-	font-size: 22px;
-	line-height: 25px;
-	margin-top: 15px;
-	margin-bottom: 0px;
+	font-size: 27px;
+	line-height: 30px;
+	margin-bottom: 10px;
 	font-weight: 500;
 	font-family: "Avenir-Medium", sans-serif;
 	color: #111213;
@@ -1338,13 +1336,14 @@ footer > a:first-child {
 .ArticleProfilDescription {
 	font-family: "Avenir-Medium", sans-serif;
 	color: #111213;
+	max-width: 420px;
 }
 
 .TxtAlignRight {
 	text-align: right !important;
 }
 
-@media screen and (max-width: 505px) {
+@media screen and (max-width: 820px) {
 	.TxtAlignRight {
 		text-align: left !important;
 	}
@@ -2158,6 +2157,21 @@ footer > a:first-child {
 .SectionBorder {
 	border: solid 8px #dadada;
 	padding: 30px;
+	flex-wrap: wrap;
+}
+
+.SectionBorderWrapper {
+	display: flex;
+}
+
+@media screen and (max-width: 820px) {
+	.SectionBorderWrapper {
+		flex-wrap: wrap;
+	}
+
+	.ArticleAddContent {
+		margin-top: 30px;
+	}
 }
 
 @media screen and (max-width: 505px) {
@@ -2165,23 +2179,20 @@ footer > a:first-child {
 		border: solid 0px #dadada;
 		padding: 0px 20px 0px;
 	}	
+
+	.ArticleAddContent {
+		margin-top: 10px;
+	}
 }
 
 .WrapperBodyArticle {
 	max-width: 1270px !important;
 }
 
-.Center {
-	text-align: center;
-}
 
 .ArticleDescriptionCenter {
-	text-align: center;
 	max-width: 750px;
-	width: 100%;
-	margin: 0 auto;
 	margin-top: 5px;
-	margin-bottom: 80px;
 	color: #686868;
 	line-height: 23px;
 	font-size: 18px;
