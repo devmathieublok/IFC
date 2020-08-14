@@ -1060,52 +1060,68 @@ footer > a:first-child {
 .QuoteUp {
 	width: 70px;
 	position: absolute;
-	left: 30px;
-	top: 30px;
-	z-index: -2;
+	z-index: 0;
 	opacity: 0.3;
-	display: none;
 }
+
 
 .QuoteDown {
 	width: 70px;
 	position: absolute;
+	opacity: 0.3;
+	z-index: 0;
+}
+
+
+.QuoteUpDalila {
+	top: 50px;
+	left: 0;
+}
+
+.QuoteDownDalila {
+	bottom: -20px;
 	right: -40px;
-	bottom: -30px;
-	opacity: 0.3;
-	z-index: -2;
-	display: none;
 }
 
-.QuoteUpReverse {
-	width: 70px;
-	position: absolute;
-	left: -30px;
+.QuoteUpPauline {
 	top: 70px;
-	z-index: -2;
-	opacity: 0.3;
-	display: none;
+	left: -40px;
 }
 
-.QuoteDownReverse {
-	width: 70px;
-	position: absolute;
-	right: -30px;
+.QuoteDownPauline {
 	bottom: -10px;
-	opacity: 0.3;
-	z-index: -2;
-	display: none;
+	right: -40px;
+}
+
+.QuoteUpMarieJeanne {
+	top: 80px;
+	left: -67px;
+}
+
+.QuoteDownMarieJeanne {
+	bottom: -30px;
+	left: 180px;
+}
+
+.QuoteUpMathilde {
+	top: 70px;
+	left: -70px;
+}
+
+.QuoteDownMathilde {
+	bottom: -30px;
+	left: 170px;
 }
 
 @media screen and (max-width: 822px) {
-	.QuoteUp, .QuoteUpReverse  {
-		left: initial;
-		right: 0px;
-		width: 20vw;
+	.QuoteUpDalila, .QuoteUpPauline, .QuoteUpMarieJeanne, .QuoteUpMathilde {
+		right: 0px !important;
 		top: 0;
+		left: auto;
+		position: absolute;
 	}
 
-	.QuoteDown, .QuoteDownReverse {
+	.QuoteDown {
 		display: none;
 	}
 }
@@ -1336,7 +1352,6 @@ footer > a:first-child {
 .ArticleProfilDescription {
 	font-family: "Avenir-Medium", sans-serif;
 	color: #111213;
-	max-width: 420px;
 }
 
 .TxtAlignRight {
@@ -1691,6 +1706,12 @@ footer > a:first-child {
 	text-align: right;
 	font-size: 18px;
 	margin-bottom: 60px;
+}
+
+@media screen and (max-width: 505px) {
+	.SpeechExergue {
+		margin-bottom: 30px;
+	}
 }
 
 .Iexergue {
