@@ -343,7 +343,7 @@ header {
 
 footer {
 	margin-top: 50px;
-	background-color: #ac026e;
+	background-color: #9b9b9b;
 	height: 200px;
 	display: flex;
 	justify-content: center;
@@ -1361,7 +1361,7 @@ footer > a:first-child {
 
 .ArticleProfilDescription {
 	font-family: "Avenir-Medium", sans-serif;
-	color: #111213;
+	color: grey;
 }
 
 .TxtAlignRight {
@@ -2391,6 +2391,50 @@ footer > a:first-child {
 @media screen and (max-width: 505px) {
 	#myBtn {
 		display: none;
+	}
+}
+
+.SectionCenter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 505px) {
+	.SectionCenter {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}
+.BandeauEnd {
+	width: 100%;
+}
+
+.BandeauEnd > div {
+	width: 100%;
+	background: #ac026e;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: -1px;
+}
+
+.BandeauMessage {
+	font-family: 'Sentinel', sans-serif;
+	text-align: center;
+	font-size: 20px;
+	color: #FFF;
+}
+
+.BandeauMessage > span {
+	font-size: 30px;
+}
+
+@media screen and (max-width: 505px) {
+	.VilleFooterLastPage {
+		width: 85%;
 	}
 }
 
