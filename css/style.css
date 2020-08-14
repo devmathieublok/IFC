@@ -1351,6 +1351,7 @@ footer > a:first-child {
 	color: #686868;
 	line-height: 23px;
 	font-size: 18px;
+	font-family: 'Avenir', sans-serif;
 }
 
 .ImgDescription {
@@ -2231,6 +2232,7 @@ footer > a:first-child {
 	color: #686868;
 	line-height: 23px;
 	font-size: 18px;
+	font
 }
 
 @media screen and (max-width: 505px) {
