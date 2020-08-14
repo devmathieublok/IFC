@@ -1834,7 +1834,7 @@ footer > a:first-child {
 }
 
 .Box {
-	width: 300px;
+	width: 375px;
 	height: 375px;
 	background-color: #BC6428;
 	display: flex;
@@ -1909,7 +1909,7 @@ footer > a:first-child {
 
 .IFCHelpVille {
 	position: absolute;
-	left: -180px;
+	left: -270px;
 }
 
 @media screen and (max-width: 820px) {
