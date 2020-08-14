@@ -71,6 +71,12 @@
 		<p data-aos="fade" data-aos-easing="ease-out" data-aos-duration="900" data-aos-offset="200" data-aos-delay="200" class="MobileH1NavTemplate" href="index.html">COVID-19 : <span class="LowerCaseTxt"> Tous mobilisés, tous solidaires</span></p>
 	</div>
 	<div class="RelativeContent">
+		<div id="myModal" class="modal">
+  			<div class="modal-content">
+    			<span class="close">&times;</span>
+    			<img class="LetterImgPopUp" src="assets/template/page-initiative-solidaire/lettre.jpg" alt="Image article">
+ 			</div>
+		</div>
 		<section class="SectionIntro" data-aos="fade" data-aos-easing="ease-out" data-aos-duration="900" data-aos-offset="200" data-aos-delay="100">
 			<div class="WrapperBody">
 				<div class="IntroImg IntroImgInitiativeSolidaire">
@@ -158,6 +164,7 @@
 					les locataires. En témoignent les lettres de remerciements reçues
 					dans toutes les agences du territoire !
 				PROXIMITÉ</p>
+				<button id="myBtn">Afficher la lettre</button>
 			</div>
 		</section>
 		<section class="SectionQuote QuoteBlueBg">
@@ -267,6 +274,32 @@ anchorPlacement: 'top-bottom', // defines which position of the element regardin
 			$('.PageNameActive').removeClass('Hide');     
 		});
 	});  
+</script>
+<script type="text/javascript">
+	var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 </script>
 
 </body>

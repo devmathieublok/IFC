@@ -1113,8 +1113,18 @@ footer > a:first-child {
 	left: 170px;
 }
 
+.QuoteUpAnnie {
+	top: 70px;
+	left: -70px;
+}
+
+.QuoteDownAnnie {
+	bottom: -30px;
+	left: 240px;
+}
+
 @media screen and (max-width: 822px) {
-	.QuoteUpDalila, .QuoteUpPauline, .QuoteUpMarieJeanne, .QuoteUpMathilde {
+	.QuoteUpDalila, .QuoteUpPauline, .QuoteUpMarieJeanne, .QuoteUpMathilde, .QuoteUpAnnie {
 		right: 0px !important;
 		top: 0;
 		left: auto;
@@ -2159,6 +2169,10 @@ footer > a:first-child {
 	transform: rotate(3deg);
 }
 
+.LetterImgPopUp {
+	width: 600px;
+}
+
 @media screen and (max-width: 505px) {
 	.LetterImg {
 		transform: rotate(0deg);
@@ -2225,3 +2239,159 @@ footer > a:first-child {
 		margin-bottom: 0px;
 	}
 }
+
+.IFCVilleBonMorale {
+	height: 400px;
+}
+
+@media screen and (max-width: 820px) {
+	.IFCVilleBonMorale {
+		height: auto;
+		width: 100%;
+		max-width: 400px;
+	}
+}
+
+.AlignCenter {
+	display: flex;
+	align-items: center;
+}
+
+.SectionPurpleArticle {
+	display: flex;
+	background-color: #C173A5;
+	flex-direction: column;
+}
+
+.SectionPurpleArticleTitle {
+	text-align: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 820px) {
+	.ArticlePurpleSection {
+		margin-right: 30px;
+		margin-bottom: 0px !important;		
+	}
+}
+
+@media screen and (max-width: 505px) {
+	.ArticlePurpleSection {
+		margin-right: 0px;
+		margin-bottom: 50px !important;		
+	}
+
+	.FlexAlign {
+		flex-direction: column;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}
+
+.SectionPurpleArticleTitle > p {
+	margin: 0px;
+	font-family: 'Sentinel', sans-serif;
+	font-size: 30px;
+	margin-left: 20px;
+	color: #FFF;
+}
+
+@media screen and (max-width: 505px) {
+	.SectionPurpleArticleTitle > p {
+		font-size: 7vw;
+	}
+}
+
+.SectionPurpleArticleTitle > img {
+	margin-left: -100px;
+	width: 80px;
+}
+
+@media screen and (max-width: 505px) {
+	.SectionPurpleArticleTitle > img {
+		margin-left: -0px;
+		width: 80px;
+	}	
+}
+
+.FlexAlign {
+	display: flex;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.ArticleDescriptionSmall {
+	color: #111213;
+}
+
+/*PopUp Lettre*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: scroll; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+@media screen and (max-width: 505px) {
+	.modal {
+		display: none;
+	}
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #FFF;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 600px; /* Could be more or less, depending on screen size */
+  position: relative;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 30px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myBtn {
+	font-family: 'Avenir-Medium', sans-serif;
+	color: #FFF;
+	border:none;
+	background: #ac026e;
+	border-radius: 30px;
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 15px;
+}
+
+@media screen and (max-width: 505px) {
+	#myBtn {
+		display: none;
+	}
+}
+
+/**/
