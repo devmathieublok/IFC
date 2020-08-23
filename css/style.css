@@ -232,6 +232,10 @@ header {
 	overflow: hidden;	
 }
 
+.LeftSpacing {
+	margin-left: 2px;
+}
+
 .CardScaleImg {
 	height: 100%;
 	width: 100%;
@@ -2049,6 +2053,11 @@ footer > a:first-child {
 	color: #FFF;
 }
 
+.SmallQuote {
+	width: 50px;
+	margin-bottom: -10px;
+}
+
 @media screen and (max-width: 820px) {
 	.QuoteDescription100Width {
 		width: 100%;
@@ -2388,6 +2397,7 @@ footer > a:first-child {
 	margin-top: 20px;
 	padding: 10px 20px;
 	font-size: 15px;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 505px) {
@@ -2438,6 +2448,12 @@ footer > a:first-child {
 	.VilleFooterLastPage {
 		width: 85%;
 	}
+}
+
+.SectionNextArrow {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
 }
 
 /**/
