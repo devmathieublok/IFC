@@ -1229,10 +1229,28 @@ footer > a:first-child {
 	font-family: "Avenir", sans-serif;
 	margin-top: 30px;
 	font-size: 18px;
+	z-index: 99 !important;
 }
 
 .QuoteDescriptionReverse {
 	text-align: left;
+}
+
+sup {
+	font-size: 13px;
+	padding-left: 1px;
+}
+
+.ButtonWrapper {
+	margin-left: 30px;
+	display: flex;
+}
+
+@media screen and (max-width: 505px) {
+	.ButtonWrapper {
+		margin-left: 0px;
+		margin-right: 30px;
+	}	
 }
 
 @media screen and (max-width: 822px) {
@@ -1806,8 +1824,28 @@ footer > a:first-child {
 	text-transform: uppercase;
 	font-size: 15px;
 	font-family: "Avenir-Medium", sans-serif;
-	width: 250px;
 	display: flex;
+}
+
+@media screen and (max-width: 505px) {
+	.AudioMessage {
+		flex-direction: row-reverse;
+		margin-bottom: 30px;
+	}
+}
+
+button:focus {
+	outline:0 !important; 
+}
+
+button:hover {
+	opacity: 0.5;
+}
+
+@media screen and (max-width: 505px) {
+	button:hover {
+	opacity: 1;
+}
 }
 
 .AudioMessage > img {
@@ -2398,6 +2436,8 @@ footer > a:first-child {
 	padding: 10px 20px;
 	font-size: 15px;
 	cursor: pointer;
+	height: initial;
+	width: initial;
 }
 
 @media screen and (max-width: 505px) {
@@ -2454,6 +2494,27 @@ footer > a:first-child {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 30px;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+  padding-left: 0px;
+  border-color: transparent transparent transparent #ae356e;
+  transition: 100ms all ease;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+}
+.button.paused {
+  border-style: double;
+  border-width: 0px 0 0px 60px;
+}
+.button:hover {
+  border-color: transparent transparent transparent #ae356e;
 }
 
 /**/
