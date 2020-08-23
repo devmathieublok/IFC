@@ -1829,8 +1829,8 @@ sup {
 
 @media screen and (max-width: 505px) {
 	.AudioMessage {
-		flex-direction: row-reverse;
-		margin-bottom: 30px;
+		flex-direction: column-reverse;
+		max-width: 280px;
 	}
 }
 
