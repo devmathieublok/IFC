@@ -2619,6 +2619,17 @@ button {
 	min-height: calc(100vh - 100px);
 }
 
+@media screen and (max-width: 500px) {
+	.ml-box {
+	min-height: 100vh;
+	}
+
+	.ml-p {
+		max-width: 320px !important;
+		text-align: justify !important;
+	}
+
+}
 .ml-h2 {
 	font-size: 30px;
 	text-align: center;
