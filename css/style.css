@@ -355,6 +355,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
 .FooterLinks {
@@ -364,14 +365,15 @@ footer {
 	font-size: 13px;
 	color: #FFF;
 	transition:all ease-out 0.4s;
+	margin-right: 10px;
 }
 
 .FooterLinks:hover {
 	opacity: 0.5;
 }
 
-footer > a:first-child {
-	margin-right: 10px;
+footer > a:last-child {
+	margin-right: 0px;
 }
 /*Home*/
 
@@ -1178,8 +1180,7 @@ footer > a:first-child {
 .QuoteElementPhone {
 	margin-top: -120px;
 	transform: rotate(5deg) !important;
-	width: 185px;
-	
+	width: 250px;
 }
 
 @media screen and (max-width: 822px) {
@@ -2625,7 +2626,7 @@ button {
 	}
 
 	.ml-p {
-		max-width: 320px !important;
+		max-width: 335px !important;
 		text-align: justify !important;
 	}
 
@@ -2646,5 +2647,24 @@ button {
 	text-align: center;
 	margin: 0 auto;
 }
+
+.FooterSocialLinksWrapper {
+	margin-top: 20px;
+}
+
+.FooterSocialLinks:hover {
+	opacity: 0.7;
+
+}
+
+.FooterSocialLinks {
+	margin-right: 10px;
+	transition: all ease-out 0.4s;
+}
+
+.FooterSocialLinks:last-child {
+	margin-right: 0px;
+}
+
 
 /**/
