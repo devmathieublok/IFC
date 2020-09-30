@@ -112,7 +112,7 @@ header {
 
 .Home_Logo {
 	width: 200px;
-	margin-top: 4px;
+	margin-top: 12px;
 }
 
 @media screen and (max-width: 320px) {
@@ -1611,7 +1611,24 @@ sup {
 	transition: all ease-out 0.2s;
 }
 
+.ArticleNextEnd::before {
+	content: 'Home';
+	position: absolute;
+	right: 115px;
+	top: 327px;
+	font-family: "Avenir", sans-serif;
+	color: #ac026e;
+	opacity: 0;
+	text-transform: uppercase;
+	width: auto;
+	transition: all ease-out 0.2s;
+}
+
 .ArticleNext:hover::before {
+	opacity: 1;
+}
+
+.ArticleNextEnd:hover::before {
 	opacity: 1;
 }
 
@@ -1627,6 +1644,10 @@ sup {
 	}
 
 	.ArticleNext:hover::before {
+		content: none;
+	}
+
+	.ArticleNextEnd:hover::before {
 		content: none;
 	}
 }
@@ -2543,6 +2564,10 @@ button:hover {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 30px;
+}
+
+.SectionNextArrowEnd {
+	margin-top: 50px;
 }
 
 button {
