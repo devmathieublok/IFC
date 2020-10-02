@@ -372,6 +372,13 @@ footer {
 	opacity: 0.5;
 }
 
+@media screen and (max-width: 500px) {
+	.FooterLinks {
+		margin-bottom: 7px;
+	}
+}
+
+
 footer > a:last-child {
 	margin-right: 0px;
 }
@@ -553,6 +560,13 @@ footer > a:last-child {
 	position: relative;
 }
 
+@media screen and (max-height: 375px) {
+		.SquareNav::before {
+			content: none;
+
+	}
+}
+
 .SquareNavItem {
 	width: 30px;
 	height: 30px;
@@ -692,11 +706,33 @@ footer > a:last-child {
 	margin: 0px;
 }
 
+@media screen and (max-height: 414px) {
+	.BurgerMenuItem > a {
+		margin: 0px 0px 4vh 0px;
+	}
+
+	.BurgerMenuItem {
+		margin-top: 118px;
+	}
+}
+
+@media screen and (max-height: 375px) {
+	.BurgerMenuItem {
+		margin-top: 105px;
+	}
+}
+
 .VilleBurgerMenu {
 	position: absolute;
 	width: 110vw;
 	opacity: 1;
 	bottom: 10%;
+}
+
+@media screen and (max-height: 414px) {
+	.VilleBurgerMenu {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -2223,7 +2259,7 @@ button:hover {
 .Column > p:first-child {
 	margin: 0px;
 	font-family: 'Avenir-Medium', sans-serif;
-	font-size: 20px;
+	font-size: 23.5px;
 }
 
 .Column > p:last-child {
@@ -2423,6 +2459,7 @@ button:hover {
 .NumberKey > span {
 	font-size: 43px;
 	margin-bottom: 0px;
+	letter-spacing: -2.0px;
 	color: #ac026e;
 	font-weight: 500;
 	font-family: 'Avenir-Medium', sans-serif;
@@ -2691,5 +2728,14 @@ button {
 	margin-right: 0px;
 }
 
+@media screen and (max-width: 500px) {
+footer > div:first-child {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	width: 90vw;
+	justify-content: center;
+	text-align: center;
+}
+}
 
 /**/
